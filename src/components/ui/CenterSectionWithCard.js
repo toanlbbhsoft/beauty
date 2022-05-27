@@ -54,7 +54,7 @@ function CenterSectionWithCard({title, slogan, description, children}) {
             <TypographyTitle variant="h5" component="h1">{title}</TypographyTitle>
             <TypographySlogan variant="h2" component="h2">{slogan}</TypographySlogan>
             <TypographyDescription variant="p" component="p">{description}</TypographyDescription>
-            <StackStyled spacing={5}>{children}</StackStyled>
+            <StackStyled rowSpacing={5}>{children}</StackStyled>
         </ContainerStyled>
     );
 }

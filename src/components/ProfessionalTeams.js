@@ -26,7 +26,7 @@ const CardStyled = styled(Card)(({active}) => ({
     borderRadius: "4.2rem",
     border: "none",
     outline: "none",
-    margin: active ? "0 2rem" : "0",
+    margin: active ? "4rem 2rem" : "0",
 }))
 
 function ProfessionalTeams() {

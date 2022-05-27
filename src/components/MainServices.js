@@ -24,11 +24,11 @@ const CardStyled = styled(Card)(() => ({
     borderRadius: "4.2rem",
 }))
 
-function CardService({img, title, description}) {
+function CardService({img, title, description,margin}) {
     return (
         <Grid item xs={12} md={6} lg={4} sx={{
           '&.MuiGrid-root' : {
-              margin:"0",
+              margin:margin ?? "0",
           }
         }}>
             <CardStyled>
@@ -65,7 +65,7 @@ function MainServices() {
             >
                 <CardService img={img1} title="Beauty consultation"
                              description="Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."/>
-                <CardService img={img2} title="Skin treatments"
+                <CardService margin="3rem 0" img={img2} title="Skin treatments"
                              description="Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."/>
                 <CardService img={img3} title="Beauty product"
                              description="Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."/>
