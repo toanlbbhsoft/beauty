@@ -14,7 +14,7 @@ function Gallery(props) {
             <OurGallery/>
             <Banner
                 direction="column"
-                title="Best responsibility and service for our customers"
+                title="Watch the video tour"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"
                 backgroundImage={bgBanner}
                 actionComponent={
