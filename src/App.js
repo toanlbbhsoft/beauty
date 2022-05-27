@@ -9,8 +9,6 @@ import Team from "./container/Team";
 import Contact from "./container/Contact";
 import Blog from "./container/Blog";
 import {useEffect} from "react";
-import ToTopButton from './access/ToTopButton.svg'
-import Box from "@mui/material/Box";
 
 
 function App() {
@@ -27,11 +25,11 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="about" element={<About/>}/>
-            <Route path="service" element={<Service />}/>
-            <Route path="gallery" element={<Gallery />}/>
-            <Route path="blog" element={<Blog />}/>
-            <Route path="team" element={<Team />}/>
-            <Route path="contact" element={<Contact />}/>
+            <Route path="service" element={<Service/>}/>
+            <Route path="gallery" element={<Gallery/>}/>
+            <Route path="blog" element={<Blog/>}/>
+            <Route path="team" element={<Team/>}/>
+            <Route path="contact" element={<Contact/>}/>
         </Routes>
     </>);
 }
