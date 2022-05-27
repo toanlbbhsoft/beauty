@@ -16,6 +16,7 @@ import Linkedin from "../access/linkedin-in.png";
 import YouTube from '../access/youtube.png';
 import Instagram from '../access/instagram2.png';
 import {Link} from "react-router-dom";
+import ToTopButton from "../access/ToTopButton.svg";
 
 const ListItemTriangle = styled(ListItem)(() => ({
     "&.MuiListItem-root:before": {
@@ -55,6 +56,12 @@ const FooterContainer = styled(Container)(({marginTop, theme}) => ({
 }))
 
 function Footer({marginTop}) {
+    const style = {
+        position: 'absolute',
+        bottom:"17rem",
+        right:"6.5rem",
+        width:"3.6rem",
+    }
     return (
         <FooterContainer>
             <Background/>
@@ -164,6 +171,7 @@ function Footer({marginTop}) {
                     </Stack>
                 </Stack>
             </ContainerWithPadding>
+            <Box component="img" src={ToTopButton} sx={style} onClick={()=>window.scrollTo(0,0)}/>
         </FooterContainer>);
 }
 

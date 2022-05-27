@@ -1,9 +1,10 @@
 import React from 'react';
 import CenterSectionWithComponent from "./ui/CenterSectionWithComponent";
 
-import img1 from '../access/team/unsplash_8YG31Xn4dSw.png';
-import img2 from '../access/team/unsplash_byGTytEGjBo.png';
+import img1 from '../access/team/unsplash_byGTytEGjBo.png';
+import img2 from '../access/team/unsplash_8YG31Xn4dSw.png';
 import img3 from '../access/team/unsplash_Fsgzm8N0hIY.png';
+
 import Profile from "./Profile";
 
 function AssistanceTeam(props) {

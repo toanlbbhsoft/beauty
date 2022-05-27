@@ -9,7 +9,8 @@ import Team from "./container/Team";
 import Contact from "./container/Contact";
 import Blog from "./container/Blog";
 import {useEffect} from "react";
-
+import ToTopButton from './access/ToTopButton.svg'
+import Box from "@mui/material/Box";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location])
+
     return (<>
         <GlobalStyles styles={{ul: {margin: 0, padding: 0, listStyle: 'none'}, body: {fontSize: "1.6rem"}}}/>
         <CssBaseline/>
