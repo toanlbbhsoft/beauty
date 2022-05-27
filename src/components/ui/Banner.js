@@ -10,14 +10,15 @@ const BoxStyled = styled(Box)(({direction, theme}) => ({
     marginTop: "9rem",
     position: "relative",
     minHeight: "30rem",
-    [theme.breakpoints.up("lg")]: {
-        textAlign: direction === "column" ? "center" : "start",
-        padding: "16.5rem 15rem",
-    },
     [theme.breakpoints.up("xs")]: {
         textAlign: "center",
         padding: "5.5rem 5rem"
     },
+    [theme.breakpoints.up("lg")]: {
+        textAlign: direction === "column" ? "center" : "start",
+        padding: "16.5rem 15rem",
+    },
+
 }))
 
 const BoxBackground = styled(Box)(({backgroundImage}) => ({
@@ -65,7 +66,7 @@ const TypographyDescription = styled(Typography)(() => ({
     zIndex: "2",
 }))
 
-function Banner({direction = "column", title, description, backgroundImage, actionComponent, hasOverlay = true}) {
+function Banner({direction = "column", title, description, backgroundImage, actionComponent, hasOverlay = true,padding}) {
     // direction : "row", "column"
     return (
         <BoxStyled direction={direction}>

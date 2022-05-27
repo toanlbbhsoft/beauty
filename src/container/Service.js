@@ -42,6 +42,7 @@ function Service() {
                 component={<ImageBox img={img3}/>}
                 actionBox={<ActionBox/>}/>
             <Banner
+
                 direction="row"
                 title="Best responsibility and service for our customers"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"
@@ -53,7 +54,8 @@ function Service() {
                             lg:"row",
                             xs:"column"
                         },
-                        alignItems: "center"
+                        alignItems: "center",
+
                     }}>
                         <Box component="img" alt="" src={playButton} sx={{
                             // marginLeft: "1.3rem",
