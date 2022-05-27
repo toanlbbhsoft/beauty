@@ -17,6 +17,7 @@ const CardStyled = styled(Card)(({active}) => ({
     justifyContent: "space-around",
     alignItems: "center", // maxHeight: "45.8rem",
     maxWidth: "42.4rem",
+    minWidth: active ? "35rem" : "28rem",
     // height: active ? "62.56rem" : "auto",
     background: "transparent",
     boxShadow: active ? "0 25px 50px 25px #F7F7FF;" : "none",
